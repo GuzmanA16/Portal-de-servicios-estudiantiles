@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nRd7onI/Aw0=",
+  "dgSpecHash": "yGAwkdMGCJBj8N7fgaWvzRH1Zd1xAt1NLK5P0Sq6pLKvI7E7PKZHW+ved0mN3mKJcdbRshNVb1gM/zGQs0rq/g==",
   "success": true,
-  "projectFilePath": "C:\\Project X\\BlazorServer_SQLserver\\Service\\Service.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\service\\Service.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

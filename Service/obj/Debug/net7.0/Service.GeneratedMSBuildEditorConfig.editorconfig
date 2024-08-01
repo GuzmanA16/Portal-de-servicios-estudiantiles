@@ -9,67 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Service
 build_property.RootNamespace = Service
-build_property.ProjectDir = C:\Project X\BlazorServer_SQLserver\Service\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Project X\BlazorServer_SQLserver\Service
+build_property.MSBuildProjectDirectory = C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/App.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/Carousel.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/Carousel.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyb3VzZWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/Counter.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/FetchData.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/Index.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/Psicologia/Psicologia.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/Psicologia/Psicologia.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHNpY29sb2dpYVxQc2ljb2xvZ2lhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/Services.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/Services.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/Tutoria/Tutoria.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/Tutoria/Tutoria.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHV0b3JpYVxUdXRvcmlhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Shared/SurveyPrompt.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/_Imports.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Shared/MainLayout.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rzu1386arn
 
-[C:/Project X/BlazorServer_SQLserver/Service/Shared/NavMenu.razor]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-69uqsncfsf
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/Error.cshtml]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Project X/BlazorServer_SQLserver/Service/Pages/_Host.cshtml]
+[C:/Users/jonai/OneDrive/Desktop/Portal-de-servicios-estudiantiles/service/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

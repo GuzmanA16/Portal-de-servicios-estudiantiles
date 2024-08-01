@@ -29,3 +29,34 @@ C:\Project X\BlazorServer_SQLserver\Service\obj\Debug\net7.0\refint\Service.dll
 C:\Project X\BlazorServer_SQLserver\Service\obj\Debug\net7.0\Service.pdb
 C:\Project X\BlazorServer_SQLserver\Service\obj\Debug\net7.0\Service.genruntimeconfig.cache
 C:\Project X\BlazorServer_SQLserver\Service\obj\Debug\net7.0\ref\Service.dll
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\bin\Debug\net7.0\appsettings.json
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\bin\Debug\net7.0\Service.staticwebassets.runtime.json
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\bin\Debug\net7.0\Service.exe
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\bin\Debug\net7.0\Service.deps.json
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\bin\Debug\net7.0\Service.runtimeconfig.json
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\bin\Debug\net7.0\Service.dll
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\bin\Debug\net7.0\Service.pdb
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.AssemblyInfo.cs
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.RazorAssemblyInfo.cache
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.RazorAssemblyInfo.cs
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\staticwebassets\msbuild.Service.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\staticwebassets\msbuild.build.Service.props
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Service.props
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Service.props
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\scopedcss\bundle\Service.styles.css
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\scopedcss\projectbundle\Service.bundle.scp.css
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.dll
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\refint\Service.dll
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.pdb
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\Service.genruntimeconfig.cache
+C:\Users\jonai\OneDrive\Desktop\Portal-de-servicios-estudiantiles\service\obj\Debug\net7.0\ref\Service.dll
