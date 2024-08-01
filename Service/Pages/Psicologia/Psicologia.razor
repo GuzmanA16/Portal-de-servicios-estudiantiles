@@ -1,0 +1,314 @@
+@page "/psicologia"
+
+<div class="modal" style="display: @(showCard ? "block" : "none"); background-color: rgba(0, 0, 0, 0.5);" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width: 650px;">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title"><b>Consulta Psicologíca</b></h5>
+                <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close" @onclick="CloseCard">
+                    <span aria-hidden="true" class="oi oi-x"></span>
+                </button>
+            </div>
+
+            <form >
+                <div class="modal-body">
+                    <h6 class="card-subtitle mt-2 mb-2 text-muted fw-bold text-center">Datos personales</h6>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <span class="oi oi-person"></span>
+                                    <label>Nombre</label>
+                                </span>
+                                <input type="text" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>Apellidos</label>
+                                </span>
+                                <input type="text" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                        <div class="form-group input-group mb-3">
+                            <span class="input-group-text bg-white text-black fw-bold">
+                                <span class="oi oi-badge"></span>
+                                <label>Matrícula</label>
+                            </span>
+                            <input type="text"  class="form-control" 
+                                required />
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <input type="checkbox" class="form-check-input" 
+                                        required/>
+                                <span class=" text-black fw-bold">
+                                    <label>Mujer</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <input type="checkbox" class="form-check-input" 
+                                        required/>
+                                <span class="text-black fw-bold">
+                                    <label>Hombre</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h6 class="card-subtitle mt-2 mb-2 text-muted fw-bold text-center">Datos de la cíta</h6>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>Edad</label>
+                                </span>
+                                <input type="number" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>Telefono</label>
+                                </span>
+                                <input type="tel" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>Fecha</label>
+                                </span>
+                                <input type="date" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                        <div class="col text-end">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <span class="oi oi-person"></span>
+                                    <label>Horario</label>
+                                </span>
+                                <input type="time" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+
+                <div class="modal-footer bg-dark text-white">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary" @onclick="CloseCard">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Agendar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="table-container">
+    <div class="card col-12">
+        <div class="card-body">
+            <!-- Button trigger modal -->
+            <button class="btn btn-outline-success d-print-none" @onclick="ShowCard">
+                <span class="oi oi-plus"></span>
+            </button>
+            <button class="btn btn-outline-primary d-print-none" 
+                @onclick="async ()=>{await PrintPageAsync();}">
+                <span class="oi oi-print"></span>
+            </button>
+
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <div class="input-group d-print-none">
+                        <input type="text" class="form-control border-0 border-bottom" 
+                        placeholder="Buscar por nombre" @bind="Filtro">
+                        <button class="btn btn-outline input-group-text border-0 bg-white" 
+                            type="button" id="button-addon2" @onclick="()=>CargarContactos()">
+                            <span class="oi oi-magnifying-glass text-black"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-12 mt-2">
+                <table class="table table-hover table-striped">
+                    <thead class="bg-dark text-white">
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre completo</th>
+                            <th>Matrícula</th>
+                            <th>Telefono</th>
+                            <th>Sexo</th>
+                            <th>Horario</th>
+                            <th class="d-print-none">...</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @* @foreach (var Row in Clientes)
+                        {
+                            <tr>
+                                <td>@Row.Id</td>
+                                <td>@FormatCustomerId(Row.Cedula)</td>
+                                <td>@Row.Nombre @Row.Apellidos</td>
+                                <td>@Row.Direccion</td>
+                                <td>@FormatPhoneNumber(Row.Telefono)</td>
+                                <td class="d-print-none">
+                                    <button @onclick="()=>Seleccionar(Row.Id)"
+                                        class="btn btn-outline-warning">
+                                        <span class="oi oi-pencil"></span>
+                                    </button>
+                                    <button @onclick="()=>Eliminar(Row)"
+                                        class="btn btn-outline-danger">
+                                        <span class="oi oi-trash"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        } *@
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+@code {
+    @* public string TituloForm => request.Id == 0 ? 
+    "Agregar Cliente" : "Modificar Cliente"; *@
+    
+    public string Filtro { get; set; } = "";
+    public bool ShowForm { get; set; } = false;
+    @* public List<ClienteResponse> Clientes { get; set; } = new();
+    public ClienteRequest request { get; set; } = new(); *@
+    public bool showCard { get; set; } = false;
+    public string Message { get; set; } = "";
+
+    private string FormatPhoneNumber(string phoneNumber)
+    {
+         // Verifica si phoneNumber es null
+        if (phoneNumber != null && phoneNumber.Length == 10)
+        {
+            // Formatea el número telefónico
+            return $"({phoneNumber.Substring(0, 3)}) {phoneNumber.Substring(3, 3)}-{phoneNumber.Substring(6)}";
+        }
+        else
+        {
+            // Devuelve el número telefónico sin cambios si phoneNumber es null o no tiene la longitud esperada
+            return phoneNumber;
+        }
+    }
+    private string FormatCustomerId(string customerId)
+    {
+        // Verifica si el número telefónico tiene la longitud esperada
+        if (customerId != null && customerId.Length == 11)
+        {
+            // Formatea el número telefónico
+            return $"{customerId.Substring(0, 3)}-{customerId.Substring(3, 7)}-{customerId.Substring(10)}";
+        }
+        else
+        {
+            // Devuelve el número telefónico sin cambios si no tiene la longitud esperada
+            return customerId;
+        }
+    }
+    void ShowCard()
+    {
+        showCard = true;
+    }
+
+    void CloseCard()
+    {
+        @* request  = new ClienteRequest(); *@
+        showCard = false;
+    }
+
+    async Task CargarContactos()
+    {
+        @* var resultado =
+        await clienteServices.Consultar(Filtro);
+        if (resultado.Success)
+        {
+            Clientes = resultado.Data!;
+        } *@
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarContactos();
+    }
+
+    void Cancelar()
+    {
+        @* request  = new ClienteRequest(); *@
+        showCard = false;
+    }
+    public async Task Send()
+    {
+        @* if(request.Id == 0)
+        {
+            //Debo registrar el contacto..
+            var r = await clienteServices.Crear(request);
+            if (r.Success)
+            {
+                Cancelar();
+                await CargarContactos();
+                StateHasChanged();
+            }
+        }
+        else
+        {
+            //Debo solicitar modificar el contacto...
+            var r = await clienteServices.Modificar(request);
+            if (r.Success)
+            {
+                Cancelar();
+                await CargarContactos();
+                StateHasChanged();
+            }
+        } *@
+    }
+
+    public void Seleccionar(int Id)
+    {
+        showCard = true;
+        @* request = Clientes
+        .Where(c => c.Id == Id)
+        .Select(c => c.ToRequest())
+        .FirstOrDefault() ?? new ClienteRequest(); *@
+    }
+    public async Task Eliminar()
+    {
+        @* var resultado = await clienteServices.Eliminar(item.ToRequest());
+        if (resultado.Success)
+        {
+            await CargarContactos();
+            StateHasChanged();
+        } *@
+    }
+
+    private async Task PrintPageAsync()
+    {
+        // Llama a la función JavaScript para imprimir la página
+        await JSRuntime.InvokeVoidAsync("printPage");
+    }
+
+}

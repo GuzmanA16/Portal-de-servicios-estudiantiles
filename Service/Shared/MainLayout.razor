@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>Service UTECO</PageTitle>
+
+<div class="page">
+    <div class="sidebar d-print-none">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row d-flex justify-content-between px-5 d-print-none">
+            <div class="fw-bold h2 mt-2">
+                <img src="logo_UTECO.jpeg" class="rounded-circle img-fluid img-thumbnail" style="width: 90px;">
+                UTECO
+            </div>
+            <div>
+                <a href="https://docs.microsoft.com/aspnet/" target="_blank" class="me-3">About</a>
+                <a href="#" class="me-3">Login</a>
+            </div>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>

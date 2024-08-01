@@ -1,0 +1,99 @@
+@page "/service"
+
+<style>
+    .card:hover {
+    background-color: var(--bs-info) !important;
+    color: white;
+    }
+</style>
+
+<div class="row mt-5">
+    <div class="col-12 px-0 text-center">
+        <div class="card w-100 bg-light text-dark p-3" style="cursor: pointer;">
+            <div class="card-body">
+                <h5 class="card-title">Carrusel de imágenes</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Carrusel de imágenes</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3 px-0 text-center">
+        <div class="card bg-light text-dark p-3" style="cursor: pointer;" @onclick="TutoriaGo">
+            <div class="card-body">
+                <h5 class="card-title">Tutorias</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 px-0 text-center">
+        <div class="card bg-light text-dark p-3" style="cursor: pointer;" @onclick="BecaGo">
+            <div class="card-body">
+                <h5 class="card-title">Becas</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 px-0 text-center">
+        <div class="card bg-light text-dark p-3" style="cursor: pointer;">
+            <div class="card-body">
+                <h5 class="card-title">Salud</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 px-0 text-center">
+        <div class="card bg-light text-dark p-3" style="cursor: pointer;" @onclick="ConsultaGo">
+            <div class="card-body">
+                <h5 class="card-title">Cons. Psicolo.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4 px-0 text-center">
+        <div class="card bg-light text-dark p-3" style="cursor: pointer;">
+            <div class="card-body">
+                <h5 class="card-title">Conócenos</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 px-0 text-center">
+        <div class="card bg-light text-dark p-3" style="cursor: pointer;">
+            <div class="card-body">
+                <h5 class="card-title">Infórmate</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 px-0 text-center">
+        <div class="card bg-light text-dark p-3" style="cursor: pointer;">
+            <div class="card-body">
+                <h5 class="card-title">Contáctanos</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+
+    <footer class="w-100 bg-secondary text-center text-uppercase fw-bold py-3 px-0">
+        Todos los derechos reservados
+    </footer>
+</div>
+
+@code
+{
+    public void TutoriaGo()
+    {
+        urlHelper.NavigateTo("tutoria");
+    }
+    public void BecaGo()
+    {
+        urlHelper.NavigateTo("beca");
+    }
+
+    public void ConsultaGo()
+    {
+        urlHelper.NavigateTo("psicologia");
+    }
+}
