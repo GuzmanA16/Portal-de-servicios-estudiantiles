@@ -1,10 +1,10 @@
-@page "/psicologia"
+@page "/beca"
 
 <div class="modal" style="display: @(showCard ? "block" : "none"); background-color: rgba(0, 0, 0, 0.5);" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-        <div class="modal-content" style="width: 650px;">
+        <div class="modal-content" style="width: 710px;">
             <div class="modal-header bg-dark text-white">
-                <h5 class="modal-title"><b>Consulta Psicologíca</b></h5>
+                <h5 class="modal-title"><b>Solicitud de beca</b></h5>
                 <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close" @onclick="CloseCard">
                     <span aria-hidden="true" class="oi oi-x"></span>
                 </button>
@@ -44,7 +44,16 @@
 
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-8">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>Fecha/Nacimiento</label>
+                                </span>
+                                <input type="date" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                        <div class="col-2">
                             <div class="form-group input-group mb-3">
                                 <input type="checkbox" class="form-check-input" 
                                         required/>
@@ -53,7 +62,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-2">
                             <div class="form-group input-group mb-3">
                                 <input type="checkbox" class="form-check-input" 
                                         required/>
@@ -63,16 +72,15 @@
                             </div>
                         </div>
                     </div>
-
-                    <h6 class="card-subtitle mt-2 mb-2 text-muted fw-bold text-center">Datos de la cíta</h6>
                     <div class="row">
                         <div class="col">
                             <div class="form-group input-group mb-3">
                                 <span class="input-group-text bg-white text-black fw-bold">
-                                    <label>Edad</label>
+                                    <label>Nacionalidad</label>
                                 </span>
-                                <input type="number" class="form-control" 
-                                        required/>
+                                <select class="form-select">
+                                    <option value="">Dominican</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col">
@@ -90,32 +98,104 @@
                         <div class="col">
                             <div class="form-group input-group mb-3">
                                 <span class="input-group-text bg-white text-black fw-bold">
-                                    <label>Fecha</label>
+                                    <label>Email</label>
                                 </span>
-                                <input type="date" class="form-control" 
+                                <input type="text" class="form-control" 
                                         required/>
                             </div>
                         </div>
-                        <div class="col text-end">
+                        <div class="col">
                             <div class="form-group input-group mb-3">
                                 <span class="input-group-text bg-white text-black fw-bold">
-                                    <span class="oi oi-person"></span>
-                                    <label>Horario</label>
+                                    <label>Dirección</label>
                                 </span>
-                                <input type="time" class="form-control" 
+                                <input type="text" class="form-control" 
                                         required/>
                             </div>
                         </div>
                     </div>
+                    <h6 class="card-subtitle mt-2 mb-2 text-muted fw-bold text-center">Datos becarios</h6>
+
                     <div class="row">
-                        
+                        <div class="col-5">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>Carrera</label>
+                                </span>
+                                <select class="form-select">
+                                    <option value="">Informática</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group input-group mb-3">
+                                <span class="text-black fw-bold">
+                                    <label>¿Usted trabaja?</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-group input-group mb-3">
+                                <input type="checkbox" class="form-check-input" 
+                                        required/>
+                                <span class=" text-black fw-bold">
+                                    <label>Si</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-group input-group mb-3">
+                                <input type="checkbox" class="form-check-input" 
+                                        required/>
+                                <span class="text-black fw-bold">
+                                    <label>No</label>
+                                </span>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>Empleado</label>
+                                </span>
+                                <select class="form-select">
+                                    <option value="">Ninguno</option>
+                                    <option value="">Publico</option>
+                                    <option value="">Privado</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>Sueldo</label>
+                                </span>
+                                <input type="number" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group input-group mb-3">
+                                <span class="input-group-text bg-white text-black fw-bold">
+                                    <label>¿Cuantos hijos tiene?</label>
+                                </span>
+                                <input type="number" class="form-control" 
+                                        required/>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
 
                 <div class="modal-footer bg-dark text-white">
                     <div class="btn-group">
                         <button type="button" class="btn btn-secondary" @onclick="CloseCard">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Agendar</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
                     </div>
                 </div>
             </form>
@@ -157,9 +237,11 @@
                             <th>Nombre completo</th>
                             <th>Matrícula</th>
                             <th>Sexo</th>
-                            <th>Edad</th>
+                            <th>F/Nacimiento</th>
+                            <th>Nacionalidad</th>
+                            <th>Email</th>
+                            <th>Dirección</th>
                             <th>Telefono</th>
-                            <th>Fecha</th>
                             <th>Horario</th>
                             <th class="d-print-none">...</th>
                         </tr>
