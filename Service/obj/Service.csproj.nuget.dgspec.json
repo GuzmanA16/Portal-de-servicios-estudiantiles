@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\Service\\Service.csproj": {}
+    "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\Service\\Service.csproj": {
+    "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\service\\Service.csproj",
         "packagesPath": "C:\\Users\\jonai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\Service\\obj\\",
+        "outputPath": "C:\\Users\\jonai\\OneDrive\\Desktop\\Portal-de-servicios-estudiantiles\\service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonai\\AppData\\Roaming\\NuGet\\NuGet.Config"
